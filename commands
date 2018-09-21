@@ -1,2 +1,12 @@
 docker build -t wjsc/time .
 docker run -p 3000:3000 -d wjsc/time
+sudo yum install google-cloud-sdk
+gcloud init
+gcloud auth configure-docker
+sudo chmod 777 ~/.docker -R
+gcloud auth configure-docker
+cat ~/.docker/config.json 
+docker tag [SOURCE_IMAGE] [HOSTNAME]/[PROJECT-ID]/[IMAGE]
+docker tag wjsc/time gcr.io/catalogue-ae87f/time:1.0.0
+docker images
+docker push gcr.io/catalogue-ae87f/time
