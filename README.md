@@ -1,2 +1,5 @@
 # time
-POC Time API
+
+NodeJS + Docker + Kubernetes + Google Cloud + Freenom + Cloudflare
+
+URL: https://wjsc.cf/time
