@@ -7,6 +7,13 @@ sudo chmod 777 ~/.docker -R
 gcloud auth configure-docker
 cat ~/.docker/config.json 
 docker tag [SOURCE_IMAGE] [HOSTNAME]/[PROJECT-ID]/[IMAGE]
-docker tag wjsc/time gcr.io/catalogue-ae87f/time:1.0.0
-docker images
-docker push gcr.io/catalogue-ae87f/time
+docker tag wjsc/time gcr.io/time-217118/time:1.0.0
+docker push gcr.io/time-217118/time
+
+
+####################################
+docker tag wjsc/time/api gcr.io/time-217118/api:1.0.0
+docker tag wjsc/time/front gcr.io/time-217118/front:1.0.0
+docker push gcr.io/time-217118/api
+docker push gcr.io/time-217118/front
+####################################

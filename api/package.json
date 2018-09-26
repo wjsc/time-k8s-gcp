@@ -4,14 +4,16 @@
   "description": "POC Time API",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start": "node index.js",
+    "docker:build":"docker build -t wjsc/time/api .",
+    "docker:run":"docker run -p 3000:3000 -d wjsc/time/api"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wjsc/time.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "wjsc",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wjsc/time/issues"
   },

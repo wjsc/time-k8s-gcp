@@ -1,0 +1,25 @@
+{
+  "name": "time",
+  "version": "1.0.0",
+  "description": "POC Time API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "docker:build":"docker build -t wjsc/time/front .",
+    "docker:run":"docker run -p 3001:3001 -d wjsc/time/front"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjsc/time.git"
+  },
+  "author": "wjsc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wjsc/time/issues"
+  },
+  "homepage": "https://github.com/wjsc/time#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-fetch": "^2.2.0"
+  }
+}
